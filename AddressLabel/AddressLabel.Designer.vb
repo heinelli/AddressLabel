@@ -23,39 +23,41 @@ Partial Class AddressLabel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.ZipTextBox = New System.Windows.Forms.TextBox()
+        Me.StateTextBox = New System.Windows.Forms.TextBox()
+        Me.CityTextBox = New System.Windows.Forms.TextBox()
+        Me.StreetAddressTextBox = New System.Windows.Forms.TextBox()
+        Me.LastNameTextBox = New System.Windows.Forms.TextBox()
+        Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.DisplayLabelButton = New System.Windows.Forms.Button()
+        Me.ClearButton = New System.Windows.Forms.Button()
+        Me.ExitButton = New System.Windows.Forms.Button()
+        Me.FirstNameLabel = New System.Windows.Forms.Label()
+        Me.LastNameLabel = New System.Windows.Forms.Label()
+        Me.StreetAddressLabel = New System.Windows.Forms.Label()
+        Me.CityLabel = New System.Windows.Forms.Label()
+        Me.StateLabel = New System.Windows.Forms.Label()
+        Me.ZipLabel = New System.Windows.Forms.Label()
+        Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.ZipLabel)
+        Me.GroupBox1.Controls.Add(Me.StateLabel)
+        Me.GroupBox1.Controls.Add(Me.CityLabel)
+        Me.GroupBox1.Controls.Add(Me.StreetAddressLabel)
+        Me.GroupBox1.Controls.Add(Me.LastNameLabel)
+        Me.GroupBox1.Controls.Add(Me.FirstNameLabel)
+        Me.GroupBox1.Controls.Add(Me.ZipTextBox)
+        Me.GroupBox1.Controls.Add(Me.StateTextBox)
+        Me.GroupBox1.Controls.Add(Me.CityTextBox)
+        Me.GroupBox1.Controls.Add(Me.StreetAddressTextBox)
+        Me.GroupBox1.Controls.Add(Me.LastNameTextBox)
+        Me.GroupBox1.Controls.Add(Me.FirstNameTextBox)
         Me.GroupBox1.Location = New System.Drawing.Point(27, 47)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(848, 997)
@@ -63,56 +65,57 @@ Partial Class AddressLabel
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mailing Address"
         '
-        'TextBox6
+        'ZipTextBox
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(11, 863)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(241, 44)
-        Me.TextBox6.TabIndex = 5
+        Me.ZipTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipTextBox.Location = New System.Drawing.Point(11, 863)
+        Me.ZipTextBox.Name = "ZipTextBox"
+        Me.ZipTextBox.Size = New System.Drawing.Size(241, 44)
+        Me.ZipTextBox.TabIndex = 5
         '
-        'TextBox5
+        'StateTextBox
         '
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(11, 722)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(241, 44)
-        Me.TextBox5.TabIndex = 4
+        Me.StateTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateTextBox.Location = New System.Drawing.Point(11, 722)
+        Me.StateTextBox.Name = "StateTextBox"
+        Me.StateTextBox.Size = New System.Drawing.Size(241, 44)
+        Me.StateTextBox.TabIndex = 4
         '
-        'TextBox4
+        'CityTextBox
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(11, 554)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(802, 44)
-        Me.TextBox4.TabIndex = 3
+        Me.CityTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityTextBox.Location = New System.Drawing.Point(11, 554)
+        Me.CityTextBox.Name = "CityTextBox"
+        Me.CityTextBox.Size = New System.Drawing.Size(802, 44)
+        Me.CityTextBox.TabIndex = 3
         '
-        'TextBox3
+        'StreetAddressTextBox
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(11, 406)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(802, 44)
-        Me.TextBox3.TabIndex = 2
+        Me.StreetAddressTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressTextBox.Location = New System.Drawing.Point(11, 406)
+        Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
+        Me.StreetAddressTextBox.Size = New System.Drawing.Size(802, 44)
+        Me.StreetAddressTextBox.TabIndex = 2
         '
-        'TextBox2
+        'LastNameTextBox
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(11, 269)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(802, 38)
-        Me.TextBox2.TabIndex = 1
+        Me.LastNameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameTextBox.Location = New System.Drawing.Point(11, 269)
+        Me.LastNameTextBox.Name = "LastNameTextBox"
+        Me.LastNameTextBox.Size = New System.Drawing.Size(802, 38)
+        Me.LastNameTextBox.TabIndex = 1
         '
-        'TextBox1
+        'FirstNameTextBox
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(11, 125)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(802, 38)
-        Me.TextBox1.TabIndex = 0
+        Me.FirstNameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(11, 125)
+        Me.FirstNameTextBox.Name = "FirstNameTextBox"
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(802, 38)
+        Me.FirstNameTextBox.TabIndex = 0
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.DisplayLabel)
         Me.GroupBox2.Location = New System.Drawing.Point(928, 47)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(781, 779)
@@ -120,126 +123,138 @@ Partial Class AddressLabel
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Address Label"
         '
-        'Button1
+        'DisplayLabelButton
         '
-        Me.Button1.Location = New System.Drawing.Point(936, 867)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(191, 177)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DisplayLabelButton.Location = New System.Drawing.Point(936, 867)
+        Me.DisplayLabelButton.Name = "DisplayLabelButton"
+        Me.DisplayLabelButton.Size = New System.Drawing.Size(191, 177)
+        Me.DisplayLabelButton.TabIndex = 2
+        Me.DisplayLabelButton.Text = "Display Label"
+        Me.DisplayLabelButton.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ClearButton
         '
-        Me.Button2.Location = New System.Drawing.Point(1235, 867)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(191, 177)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ClearButton.Location = New System.Drawing.Point(1230, 867)
+        Me.ClearButton.Name = "ClearButton"
+        Me.ClearButton.Size = New System.Drawing.Size(191, 177)
+        Me.ClearButton.TabIndex = 3
+        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.UseVisualStyleBackColor = True
         '
-        'Button3
+        'ExitButton
         '
-        Me.Button3.Location = New System.Drawing.Point(1511, 868)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(198, 177)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ExitButton.Location = New System.Drawing.Point(1511, 868)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(198, 177)
+        Me.ExitButton.TabIndex = 4
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
         '
-        'Label1
+        'FirstNameLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 86)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(116, 25)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "First Name"
+        Me.FirstNameLabel.AutoSize = True
+        Me.FirstNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameLabel.Location = New System.Drawing.Point(13, 86)
+        Me.FirstNameLabel.Name = "FirstNameLabel"
+        Me.FirstNameLabel.Size = New System.Drawing.Size(116, 25)
+        Me.FirstNameLabel.TabIndex = 6
+        Me.FirstNameLabel.Text = "First Name"
         '
-        'Label2
+        'LastNameLabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 241)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 25)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Last Name"
+        Me.LastNameLabel.AutoSize = True
+        Me.LastNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameLabel.Location = New System.Drawing.Point(13, 241)
+        Me.LastNameLabel.Name = "LastNameLabel"
+        Me.LastNameLabel.Size = New System.Drawing.Size(115, 25)
+        Me.LastNameLabel.TabIndex = 7
+        Me.LastNameLabel.Text = "Last Name"
         '
-        'Label3
+        'StreetAddressLabel
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 378)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(154, 25)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Street Address"
+        Me.StreetAddressLabel.AutoSize = True
+        Me.StreetAddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressLabel.Location = New System.Drawing.Point(13, 378)
+        Me.StreetAddressLabel.Name = "StreetAddressLabel"
+        Me.StreetAddressLabel.Size = New System.Drawing.Size(154, 25)
+        Me.StreetAddressLabel.TabIndex = 8
+        Me.StreetAddressLabel.Text = "Street Address"
         '
-        'Label4
+        'CityLabel
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 526)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 25)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "City"
+        Me.CityLabel.AutoSize = True
+        Me.CityLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityLabel.Location = New System.Drawing.Point(6, 526)
+        Me.CityLabel.Name = "CityLabel"
+        Me.CityLabel.Size = New System.Drawing.Size(49, 25)
+        Me.CityLabel.TabIndex = 9
+        Me.CityLabel.Text = "City"
         '
-        'Label5
+        'StateLabel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 694)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(62, 25)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "State"
+        Me.StateLabel.AutoSize = True
+        Me.StateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateLabel.Location = New System.Drawing.Point(6, 694)
+        Me.StateLabel.Name = "StateLabel"
+        Me.StateLabel.Size = New System.Drawing.Size(62, 25)
+        Me.StateLabel.TabIndex = 10
+        Me.StateLabel.Text = "State"
         '
-        'Label6
+        'ZipLabel
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 835)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(99, 25)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Zip Code"
+        Me.ZipLabel.AutoSize = True
+        Me.ZipLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipLabel.Location = New System.Drawing.Point(6, 835)
+        Me.ZipLabel.Name = "ZipLabel"
+        Me.ZipLabel.Size = New System.Drawing.Size(99, 25)
+        Me.ZipLabel.TabIndex = 11
+        Me.ZipLabel.Text = "Zip Code"
+        '
+        'DisplayLabel
+        '
+        Me.DisplayLabel.AutoSize = True
+        Me.DisplayLabel.Location = New System.Drawing.Point(32, 60)
+        Me.DisplayLabel.Name = "DisplayLabel"
+        Me.DisplayLabel.Size = New System.Drawing.Size(77, 25)
+        Me.DisplayLabel.TabIndex = 0
+        Me.DisplayLabel.Text = "Label1"
         '
         'AddressLabel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1738, 1154)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ExitButton)
+        Me.Controls.Add(Me.ClearButton)
+        Me.Controls.Add(Me.DisplayLabelButton)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "AddressLabel"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents FirstNameTextBox As TextBox
+    Friend WithEvents CityTextBox As TextBox
+    Friend WithEvents StreetAddressTextBox As TextBox
+    Friend WithEvents LastNameTextBox As TextBox
+    Friend WithEvents StateTextBox As TextBox
+    Friend WithEvents ZipTextBox As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents FirstNameLabel As Label
+    Friend WithEvents DisplayLabelButton As Button
+    Friend WithEvents ClearButton As Button
+    Friend WithEvents ExitButton As Button
+    Friend WithEvents ZipLabel As Label
+    Friend WithEvents StateLabel As Label
+    Friend WithEvents CityLabel As Label
+    Friend WithEvents StreetAddressLabel As Label
+    Friend WithEvents LastNameLabel As Label
+    Friend WithEvents DisplayLabel As Label
 End Class
