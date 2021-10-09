@@ -23,6 +23,12 @@ Partial Class AddressLabel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ZipLabel = New System.Windows.Forms.Label()
+        Me.StateLabel = New System.Windows.Forms.Label()
+        Me.CityLabel = New System.Windows.Forms.Label()
+        Me.StreetAddressLabel = New System.Windows.Forms.Label()
+        Me.LastNameLabel = New System.Windows.Forms.Label()
+        Me.FirstNameLabel = New System.Windows.Forms.Label()
         Me.ZipTextBox = New System.Windows.Forms.TextBox()
         Me.StateTextBox = New System.Windows.Forms.TextBox()
         Me.CityTextBox = New System.Windows.Forms.TextBox()
@@ -33,12 +39,6 @@ Partial Class AddressLabel
         Me.DisplayLabelButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.FirstNameLabel = New System.Windows.Forms.Label()
-        Me.LastNameLabel = New System.Windows.Forms.Label()
-        Me.StreetAddressLabel = New System.Windows.Forms.Label()
-        Me.CityLabel = New System.Windows.Forms.Label()
-        Me.StateLabel = New System.Windows.Forms.Label()
-        Me.ZipLabel = New System.Windows.Forms.Label()
         Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -64,6 +64,66 @@ Partial Class AddressLabel
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mailing Address"
+        '
+        'ZipLabel
+        '
+        Me.ZipLabel.AutoSize = True
+        Me.ZipLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipLabel.Location = New System.Drawing.Point(6, 835)
+        Me.ZipLabel.Name = "ZipLabel"
+        Me.ZipLabel.Size = New System.Drawing.Size(99, 25)
+        Me.ZipLabel.TabIndex = 11
+        Me.ZipLabel.Text = "Zip Code"
+        '
+        'StateLabel
+        '
+        Me.StateLabel.AutoSize = True
+        Me.StateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateLabel.Location = New System.Drawing.Point(6, 694)
+        Me.StateLabel.Name = "StateLabel"
+        Me.StateLabel.Size = New System.Drawing.Size(62, 25)
+        Me.StateLabel.TabIndex = 10
+        Me.StateLabel.Text = "State"
+        '
+        'CityLabel
+        '
+        Me.CityLabel.AutoSize = True
+        Me.CityLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityLabel.Location = New System.Drawing.Point(6, 526)
+        Me.CityLabel.Name = "CityLabel"
+        Me.CityLabel.Size = New System.Drawing.Size(49, 25)
+        Me.CityLabel.TabIndex = 9
+        Me.CityLabel.Text = "City"
+        '
+        'StreetAddressLabel
+        '
+        Me.StreetAddressLabel.AutoSize = True
+        Me.StreetAddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressLabel.Location = New System.Drawing.Point(13, 378)
+        Me.StreetAddressLabel.Name = "StreetAddressLabel"
+        Me.StreetAddressLabel.Size = New System.Drawing.Size(154, 25)
+        Me.StreetAddressLabel.TabIndex = 8
+        Me.StreetAddressLabel.Text = "Street Address"
+        '
+        'LastNameLabel
+        '
+        Me.LastNameLabel.AutoSize = True
+        Me.LastNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LastNameLabel.Location = New System.Drawing.Point(13, 241)
+        Me.LastNameLabel.Name = "LastNameLabel"
+        Me.LastNameLabel.Size = New System.Drawing.Size(115, 25)
+        Me.LastNameLabel.TabIndex = 7
+        Me.LastNameLabel.Text = "Last Name"
+        '
+        'FirstNameLabel
+        '
+        Me.FirstNameLabel.AutoSize = True
+        Me.FirstNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameLabel.Location = New System.Drawing.Point(13, 86)
+        Me.FirstNameLabel.Name = "FirstNameLabel"
+        Me.FirstNameLabel.Size = New System.Drawing.Size(116, 25)
+        Me.FirstNameLabel.TabIndex = 6
+        Me.FirstNameLabel.Text = "First Name"
         '
         'ZipTextBox
         '
@@ -149,66 +209,6 @@ Partial Class AddressLabel
         Me.ExitButton.TabIndex = 4
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
-        '
-        'FirstNameLabel
-        '
-        Me.FirstNameLabel.AutoSize = True
-        Me.FirstNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FirstNameLabel.Location = New System.Drawing.Point(13, 86)
-        Me.FirstNameLabel.Name = "FirstNameLabel"
-        Me.FirstNameLabel.Size = New System.Drawing.Size(116, 25)
-        Me.FirstNameLabel.TabIndex = 6
-        Me.FirstNameLabel.Text = "First Name"
-        '
-        'LastNameLabel
-        '
-        Me.LastNameLabel.AutoSize = True
-        Me.LastNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LastNameLabel.Location = New System.Drawing.Point(13, 241)
-        Me.LastNameLabel.Name = "LastNameLabel"
-        Me.LastNameLabel.Size = New System.Drawing.Size(115, 25)
-        Me.LastNameLabel.TabIndex = 7
-        Me.LastNameLabel.Text = "Last Name"
-        '
-        'StreetAddressLabel
-        '
-        Me.StreetAddressLabel.AutoSize = True
-        Me.StreetAddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StreetAddressLabel.Location = New System.Drawing.Point(13, 378)
-        Me.StreetAddressLabel.Name = "StreetAddressLabel"
-        Me.StreetAddressLabel.Size = New System.Drawing.Size(154, 25)
-        Me.StreetAddressLabel.TabIndex = 8
-        Me.StreetAddressLabel.Text = "Street Address"
-        '
-        'CityLabel
-        '
-        Me.CityLabel.AutoSize = True
-        Me.CityLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CityLabel.Location = New System.Drawing.Point(6, 526)
-        Me.CityLabel.Name = "CityLabel"
-        Me.CityLabel.Size = New System.Drawing.Size(49, 25)
-        Me.CityLabel.TabIndex = 9
-        Me.CityLabel.Text = "City"
-        '
-        'StateLabel
-        '
-        Me.StateLabel.AutoSize = True
-        Me.StateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StateLabel.Location = New System.Drawing.Point(6, 694)
-        Me.StateLabel.Name = "StateLabel"
-        Me.StateLabel.Size = New System.Drawing.Size(62, 25)
-        Me.StateLabel.TabIndex = 10
-        Me.StateLabel.Text = "State"
-        '
-        'ZipLabel
-        '
-        Me.ZipLabel.AutoSize = True
-        Me.ZipLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ZipLabel.Location = New System.Drawing.Point(6, 835)
-        Me.ZipLabel.Name = "ZipLabel"
-        Me.ZipLabel.Size = New System.Drawing.Size(99, 25)
-        Me.ZipLabel.TabIndex = 11
-        Me.ZipLabel.Text = "Zip Code"
         '
         'DisplayLabel
         '
