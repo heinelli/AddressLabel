@@ -6,8 +6,7 @@
 
 Option Strict On
 Option Explicit On
-
-Public Class AddressLabel
+Public Class AddressLabelForm
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
     End Sub
@@ -29,5 +28,4 @@ Public Class AddressLabel
         StateTextBox.Text = ""
         ZipTextBox.Text = ""
     End Sub
-
 End Class
