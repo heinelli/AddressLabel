@@ -29,4 +29,5 @@ Public Class AddressLabel
         StateTextBox.Text = ""
         ZipTextBox.Text = ""
     End Sub
+
 End Class

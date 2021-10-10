@@ -36,10 +36,10 @@ Partial Class AddressLabel
         Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.DisplayLabelButton = New System.Windows.Forms.Button()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -127,34 +127,34 @@ Partial Class AddressLabel
         '
         'ZipTextBox
         '
-        Me.ZipTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ZipTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ZipTextBox.Location = New System.Drawing.Point(11, 863)
         Me.ZipTextBox.Name = "ZipTextBox"
-        Me.ZipTextBox.Size = New System.Drawing.Size(241, 44)
+        Me.ZipTextBox.Size = New System.Drawing.Size(241, 38)
         Me.ZipTextBox.TabIndex = 5
         '
         'StateTextBox
         '
-        Me.StateTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StateTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StateTextBox.Location = New System.Drawing.Point(11, 722)
         Me.StateTextBox.Name = "StateTextBox"
-        Me.StateTextBox.Size = New System.Drawing.Size(241, 44)
+        Me.StateTextBox.Size = New System.Drawing.Size(241, 38)
         Me.StateTextBox.TabIndex = 4
         '
         'CityTextBox
         '
-        Me.CityTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CityTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CityTextBox.Location = New System.Drawing.Point(11, 554)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(802, 44)
+        Me.CityTextBox.Size = New System.Drawing.Size(802, 38)
         Me.CityTextBox.TabIndex = 3
         '
         'StreetAddressTextBox
         '
-        Me.StreetAddressTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StreetAddressTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StreetAddressTextBox.Location = New System.Drawing.Point(11, 406)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
-        Me.StreetAddressTextBox.Size = New System.Drawing.Size(802, 44)
+        Me.StreetAddressTextBox.Size = New System.Drawing.Size(802, 38)
         Me.StreetAddressTextBox.TabIndex = 2
         '
         'LastNameTextBox
@@ -183,12 +183,19 @@ Partial Class AddressLabel
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Address Label"
         '
+        'DisplayLabel
+        '
+        Me.DisplayLabel.Location = New System.Drawing.Point(32, 60)
+        Me.DisplayLabel.Name = "DisplayLabel"
+        Me.DisplayLabel.Size = New System.Drawing.Size(358, 247)
+        Me.DisplayLabel.TabIndex = 0
+        '
         'DisplayLabelButton
         '
         Me.DisplayLabelButton.Location = New System.Drawing.Point(936, 867)
         Me.DisplayLabelButton.Name = "DisplayLabelButton"
         Me.DisplayLabelButton.Size = New System.Drawing.Size(191, 177)
-        Me.DisplayLabelButton.TabIndex = 2
+        Me.DisplayLabelButton.TabIndex = 6
         Me.DisplayLabelButton.Text = "Display Label"
         Me.DisplayLabelButton.UseVisualStyleBackColor = True
         '
@@ -197,7 +204,7 @@ Partial Class AddressLabel
         Me.ClearButton.Location = New System.Drawing.Point(1230, 867)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(191, 177)
-        Me.ClearButton.TabIndex = 3
+        Me.ClearButton.TabIndex = 7
         Me.ClearButton.Text = "Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
@@ -206,18 +213,9 @@ Partial Class AddressLabel
         Me.ExitButton.Location = New System.Drawing.Point(1511, 868)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(198, 177)
-        Me.ExitButton.TabIndex = 4
+        Me.ExitButton.TabIndex = 8
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
-        '
-        'DisplayLabel
-        '
-        Me.DisplayLabel.AutoSize = True
-        Me.DisplayLabel.Location = New System.Drawing.Point(32, 60)
-        Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(77, 25)
-        Me.DisplayLabel.TabIndex = 0
-        Me.DisplayLabel.Text = "Label1"
         '
         'AddressLabel
         '
@@ -230,11 +228,10 @@ Partial Class AddressLabel
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "AddressLabel"
-        Me.Text = "Form1"
+        Me.Text = "Address Label Viewer"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
