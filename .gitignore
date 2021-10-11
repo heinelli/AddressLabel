@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/AddressLabel/desktop.ini
+/AddressLabel/My Project/desktop.ini
+/desktop.ini
